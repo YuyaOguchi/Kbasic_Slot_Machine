@@ -1,0 +1,909 @@
+﻿Begin Form *
+    Background = "the-avengers.jpg"
+    Caption = "Slot Machine"
+    DockTitleVisible = True
+    DrawOnPaint = True
+    GlobalX = 0
+    GlobalY = 0
+    Height = 739
+    LoadedHeight = 736
+    LoadedWidth = 603
+    LoadedX = 268
+    LoadedY = -18
+    MouseTracking = True
+    Opacity = 100
+    Resizable = True
+    SQLDelete = True
+    SQLInsert = True
+    SQLUpdate = True
+    Visible = True
+    Width = 603
+    X = 268
+    Y = -18
+
+
+  Begin Label lblBalance
+    Caption = "Balance 0Pts"
+    DrawOnPaint = True
+    Enabled = True
+    FontColor = "&Hffffff"
+    GlobalX = 0
+    GlobalY = 0
+    Height = 31
+    LoadedHeight = 31
+    LoadedWidth = 135
+    LoadedX = 27
+    LoadedY = 506
+    ParentControl = ""
+    TabIndex = 0
+    TableViewVisible = True
+    Visible = True
+    Width = 135
+    WordWrap = True
+    X = 27
+    Y = 506
+  End
+
+  Begin CommandButton cmdDeposit
+    Caption = "Deposit Money"
+    DrawOnPaint = True
+    Enabled = True
+    FontSize = 12
+    GlobalX = 0
+    GlobalY = 0
+    Height = 34
+    LoadedHeight = 34
+    LoadedWidth = 140
+    LoadedX = 19
+    LoadedY = 537
+    ParentControl = ""
+    TabIndex = 0
+    Visible = True
+    Width = 140
+    X = 19
+    Y = 537
+  End
+
+  Begin Label LblSlot1
+    Caption = "Label"
+    DrawOnPaint = True
+    Enabled = True
+    FontColor = "&HFFFFFF"
+    GlobalX = 0
+    GlobalY = 0
+    Height = 40
+    LoadedHeight = 40
+    LoadedWidth = 133
+    LoadedX = 66
+    LoadedY = 110
+    ParentControl = ""
+    TabIndex = 0
+    TableViewVisible = True
+    Visible = False
+    Width = 133
+    WordWrap = True
+    X = 66
+    Y = 110
+  End
+
+  Begin Label LblSlot2
+    Caption = "Label"
+    DrawOnPaint = True
+    Enabled = True
+    FontColor = "&HFFFFFF"
+    GlobalX = 0
+    GlobalY = 0
+    Height = 24
+    LoadedHeight = 24
+    LoadedWidth = 142
+    LoadedX = 214
+    LoadedY = 116
+    ParentControl = ""
+    TabIndex = 0
+    TableViewVisible = True
+    Visible = False
+    Width = 142
+    WordWrap = True
+    X = 214
+    Y = 116
+  End
+
+  Begin Label LblSlot3
+    Caption = "Label"
+    DrawOnPaint = True
+    Enabled = True
+    FontColor = "&HFFFFFF"
+    GlobalX = 0
+    GlobalY = 0
+    Height = 28
+    LoadedHeight = 28
+    LoadedWidth = 126
+    LoadedX = 418
+    LoadedY = 114
+    ParentControl = ""
+    TabIndex = 0
+    TableViewVisible = True
+    Visible = False
+    Width = 126
+    WordWrap = True
+    X = 418
+    Y = 114
+  End
+
+  Begin CommandButton CmdSpin
+    Caption = "SPIN"
+    DrawOnPaint = True
+    Enabled = False
+    FontSize = 50
+    GlobalX = 0
+    GlobalY = 0
+    Height = 125
+    LoadedHeight = 125
+    LoadedWidth = 133
+    LoadedX = 230
+    LoadedY = 343
+    ParentControl = ""
+    TabIndex = 0
+    Visible = True
+    Width = 133
+    X = 230
+    Y = 343
+  End
+
+  Begin Timer tmrSpin1
+    DrawOnPaint = True
+    Enabled = False
+    EventOnOpen = False
+    GlobalX = 0
+    GlobalY = 0
+    Height = 20
+    Interval = 3
+    LoadedHeight = 20
+    LoadedWidth = 76
+    LoadedX = 68
+    LoadedY = 98
+    ParentControl = ""
+    TabIndex = 0
+    TimerInterval = 0
+    Width = 76
+    X = 68
+    Y = 98
+  End
+
+  Begin ImageBox ImgSlot1
+    DrawOnPaint = True
+    Enabled = True
+    GlobalX = 0
+    GlobalY = 0
+    Height = 166
+    LoadedHeight = 166
+    LoadedWidth = 166
+    LoadedX = 25
+    LoadedY = 159
+    ParentControl = ""
+    StringValue = "avengerstitle copy.png"
+    TabIndex = 0
+    TableViewVisible = True
+    Visible = True
+    Width = 166
+    X = 25
+    Y = 159
+  End
+
+  Begin ImageBox ImgSlot2
+    DrawOnPaint = True
+    Enabled = True
+    GlobalX = 0
+    GlobalY = 0
+    Height = 166
+    LoadedHeight = 166
+    LoadedWidth = 166
+    LoadedX = 212
+    LoadedY = 157
+    ParentControl = ""
+    StringValue = "avengerstitle copy 2.png"
+    TabIndex = 0
+    TableViewVisible = True
+    Visible = True
+    Width = 166
+    X = 212
+    Y = 157
+  End
+
+  Begin ImageBox ImgSlot3
+    DrawOnPaint = True
+    Enabled = True
+    GlobalX = 0
+    GlobalY = 0
+    Height = 166
+    LoadedHeight = 166
+    LoadedWidth = 166
+    LoadedX = 401
+    LoadedY = 158
+    ParentControl = ""
+    StringValue = "avengerstitle copy 4.png"
+    TabIndex = 0
+    TableViewVisible = True
+    Visible = True
+    Width = 166
+    X = 401
+    Y = 158
+  End
+
+  Begin Timer TmrSpin2
+    DrawOnPaint = True
+    Enabled = False
+    GlobalX = 0
+    GlobalY = 0
+    Height = 20
+    Interval = 3
+    LoadedHeight = 20
+    LoadedWidth = 71
+    LoadedX = 252
+    LoadedY = 95
+    ParentControl = ""
+    TabIndex = 0
+    Width = 71
+    X = 252
+    Y = 95
+  End
+
+  Begin Timer TmrSpin3
+    DrawOnPaint = True
+    Enabled = False
+    GlobalX = 0
+    GlobalY = 0
+    Height = 20
+    Interval = 3
+    LoadedHeight = 20
+    LoadedWidth = 70
+    LoadedX = 446
+    LoadedY = 91
+    ParentControl = ""
+    TabIndex = 0
+    Width = 70
+    X = 446
+    Y = 91
+  End
+
+  Begin CommandButton cmdBet10
+    Caption = "Bet 10"
+    DrawOnPaint = True
+    Enabled = False
+    GlobalX = 0
+    GlobalY = 0
+    Height = 34
+    LoadedHeight = 34
+    LoadedWidth = 76
+    LoadedX = 198
+    LoadedY = 538
+    ParentControl = ""
+    TabIndex = 0
+    Visible = True
+    Width = 76
+    X = 198
+    Y = 538
+  End
+
+  Begin CommandButton cmdBet50
+    Caption = "Bet 50"
+    DrawOnPaint = True
+    Enabled = False
+    GlobalX = 0
+    GlobalY = 0
+    Height = 34
+    LoadedHeight = 34
+    LoadedWidth = 93
+    LoadedX = 278
+    LoadedY = 538
+    ParentControl = ""
+    TabIndex = 0
+    Visible = True
+    Width = 93
+    X = 278
+    Y = 538
+  End
+
+  Begin CommandButton cmdBet1000
+    Caption = "Bet 1000"
+    DrawOnPaint = True
+    Enabled = False
+    GlobalX = 0
+    GlobalY = 0
+    Height = 34
+    LoadedHeight = 34
+    LoadedWidth = 95
+    LoadedX = 371
+    LoadedY = 538
+    ParentControl = ""
+    TabIndex = 0
+    Visible = True
+    Width = 95
+    X = 371
+    Y = 538
+  End
+
+  Begin Label lblBet
+    Caption = "Bet 0Pts"
+    DrawOnPaint = True
+    Enabled = True
+    FontColor = "&Hffffff"
+    GlobalX = 0
+    GlobalY = 0
+    Height = 30
+    LoadedHeight = 30
+    LoadedWidth = 195
+    LoadedX = 239
+    LoadedY = 505
+    ParentControl = ""
+    TabIndex = 0
+    TableViewVisible = True
+    Visible = True
+    Width = 195
+    WordWrap = True
+    X = 239
+    Y = 505
+  End
+
+  Begin CommandButton CmdBetChange
+    Caption = "Change Bet "
+    DrawOnPaint = True
+    Enabled = False
+    GlobalX = 0
+    GlobalY = 0
+    Height = 34
+    LoadedHeight = 34
+    LoadedWidth = 102
+    LoadedX = 472
+    LoadedY = 538
+    ParentControl = ""
+    TabIndex = 0
+    Visible = True
+    Width = 102
+    X = 472
+    Y = 538
+  End
+
+  Begin Label Label6
+    Caption = "Avengers Slot"
+    DrawOnPaint = True
+    Enabled = True
+    FontColor = "&Hffffff"
+    FontSize = 50
+    GlobalX = 0
+    GlobalY = 0
+    Height = 65
+    LoadedHeight = 65
+    LoadedWidth = 341
+    LoadedX = 136
+    LoadedY = 8
+    ParentControl = ""
+    TabIndex = 0
+    TableViewVisible = True
+    Visible = True
+    Width = 341
+    WordWrap = True
+    X = 136
+    Y = 8
+  End
+
+  Begin CommandButton CommandButton7
+    Caption = "Quit"
+    DrawOnPaint = True
+    Enabled = True
+    GlobalX = 0
+    GlobalY = 0
+    Height = 34
+    LoadedHeight = 34
+    LoadedWidth = 81
+    LoadedX = 493
+    LoadedY = 602
+    ParentControl = ""
+    TabIndex = 0
+    Visible = True
+    Width = 81
+    X = 493
+    Y = 602
+  End
+
+  Begin CommandButton CmdHelp
+    Caption = "Help"
+    DrawOnPaint = True
+    Enabled = True
+    GlobalX = 0
+    GlobalY = 0
+    Height = 34
+    LoadedHeight = 34
+    LoadedWidth = 60
+    LoadedX = 21
+    LoadedY = 601
+    ParentControl = ""
+    TabIndex = 0
+    Visible = True
+    Width = 60
+    X = 21
+    Y = 601
+  End
+
+  Begin Label lblDisplay
+    Caption = "Please deposit money"
+    DrawOnPaint = True
+    Enabled = True
+    FontColor = "&HFFFFFF"
+    FontSize = 24
+    GlobalX = 0
+    GlobalY = 0
+    Height = 69
+    LoadedHeight = 69
+    LoadedWidth = 519
+    LoadedX = 40
+    LoadedY = 67
+    ParentControl = ""
+    TabIndex = 0
+    TableViewVisible = True
+    Visible = True
+    Width = 519
+    WordWrap = True
+    X = 40
+    Y = 67
+  End
+
+End Form
+/*
+Author: Yuya Oguchi  
+
+Class: 3B Randell
+
+File Created 
+10/16/12
+
+Version 1.3
+
+*/
+
+
+/* Slot Numbers */
+Dim Number1 as integer
+Dim Number2 as integer
+Dim Number3 as integer
+
+/* balance */
+Dim Balance as integer
+/* Bet */
+Dim Bet as integer
+/* Timer for Slot */
+Dim Timercount1 as integer
+Dim Timercount2 as integer
+Dim Timercount3 as integer
+
+
+
+/* Bank System*/
+Private Sub cmdDeposit_OnEvent()
+  /* Decide how much you want to deposit money. It will become the Balance*/
+Balance = val(inputbox("How much would you like to deposit"))
+lblBalance.Caption = "Balance " & Balance & "Pts"
+
+/* Display 0 when negative number is deposited*/
+if balance < 0 then
+lblBalance.caption = "Balance 0Pts"
+balance = 0
+end if
+
+/* Bring bet back to 0*/
+
+ cmdspin.enabled = True
+ bet = 0 
+ lblBet.caption = "Bet " & Bet & "Pts"
+ 
+/* if balance is less than 10, then do not enable Spin*/
+if balance < 10 then 
+  cmdSpin.enabled = False
+  
+end if
+  
+if Bet < 10 then 
+  cmdspin.enabled = False
+  
+end if
+
+/* Enable Cmdbet according to the amount of balance you put in
+  if Balance is not enough for cmdBet, then keep diable on those cmdBets
+  if Balance is higher than cmdBet, the enable those cmdBets*/
+ if balance - Bet > 10 then cmdBet10.enabled = True
+ if balance - Bet = 10 then cmdBet10.enabled = True
+ if balance - Bet < 10 then cmdBet10.enabled = False
+ if balance - Bet < 50 then cmdBet50.enabled = False
+ if balance - Bet = 50 then cmdBet50.enabled = True
+ if balance - Bet > 50 then cmdBet50.enabled = True
+ if balance - Bet > 1000 then cmdBet1000.enabled = True
+ if balance - Bet < 1000 then cmdBet1000.enabled = False 
+ if balance - Bet = 1000 then cmdBet1000.enabled = True 
+ if balance - Bet > 10 then cmdBetChange.enabled = True
+ if balance - Bet = 10 then cmdBetChange.enabled = True
+    
+End Sub
+
+
+/* Bet 10 */
+Private Sub cmdBet10_OnEvent()
+/*Increase Bet by 10
+  Display how much you increased the bet
+  if there aren't enough money (Bet > Balance), then disable bet10, bet50, and bet1000 */
+Bet = Bet + 10
+    lblBet.caption = "Bet " & Bet & "Pts"
+ /* if you don't have sufficient pts, disable cmd bottons*/
+ if balance - Bet < 10 then cmdBet10.enabled = False
+ if balance - Bet > 10 then cmdBet10.enabled = True
+ if balance - Bet > 50 then cmdBet50.enabled = True
+ if balance - Bet < 50 then cmdBet50.enabled = False
+ if balance - Bet > 1000 then cmdBet1000.enabled = True
+ if balance - Bet < 1000 then cmdBet1000.enabled = False 
+ 
+ cmdspin.enabled = True
+ 
+End Sub
+
+
+/* Bet 50 */
+Private Sub cmdBet50_OnEvent()
+  /*Increase Bet by 50
+  Display how much you increased the bet
+  if there aren't enough money (Bet > Balance), then disable bet50 and bet1000
+  if the Balance - Bet < 10 then disable Bet10 */
+Bet = Bet + 50
+    lblBet.caption = "Bet " & Bet & "Pts"
+  /* if you don't have sufficient pts, disable cmd bottons*/
+
+ if balance - Bet < 10 then cmdBet10.enabled = False
+ if balance - Bet > 50 then cmdBet50.enabled = True
+ if balance - Bet < 50 then cmdBet50.enabled = False
+ if balance - Bet > 1000 then cmdBet1000.enabled = True
+ if balance - Bet < 1000 then cmdBet1000.enabled = False 
+ 
+  cmdspin.enabled = True
+  
+End Sub
+
+
+/* Bet 1000 */
+Private Sub cmdBet1000_OnEvent()
+  /*Increase Bet by 1000
+   Display how much you increased the bet
+  if there aren't enough money (Bet > Balance), then disable bet 1000
+  if the Balance - Bet < 100 then disable Bet50 
+  if the Balance - Bet < 10 then disable Bet10  */
+Bet = Bet + 1000
+    lblBet.caption = "Bet " & Bet & "Pts"
+  /* if you don't have sufficient pts, disable cmd bottons*/
+ if balance - Bet < 10 then cmdBet10.enabled = False
+ if balance - Bet < 50 then cmdBet50.enabled = False
+ if balance - Bet < 1000 then cmdBet1000.enabled = False
+ 
+  cmdspin.enabled = True
+End Sub
+
+
+/* Bet back to 0 */
+Private Sub CmdBetChange_OnEvent()
+  /* Whatever the bet and Balance user have, return Bet back to 0 and add the amount of Bet back to Balance */
+Bet = 0
+    lblbalance.caption = "Balance " & Balance & "Pts"
+    lblBet.caption = Bet & "Pts"
+    
+ if balance - Bet > 10 then cmdBet10.enabled = True
+ if balance - Bet = 10 then cmdBet10.enabled = True
+ if balance - Bet < 10 then cmdBet10.enabled = False
+ if balance - Bet < 50 then cmdBet50.enabled = False
+ if balance - Bet = 50 then cmdBet50.enabled = True
+ if balance - Bet > 50 then cmdBet50.enabled = True
+ if balance - Bet > 1000 then cmdBet1000.enabled = True
+ if balance - Bet < 1000 then cmdBet1000.enabled = False 
+ if balance - Bet = 1000 then cmdBet1000.enabled = True 
+ if balance - Bet > 10 then cmdBetChange.enabled = True
+ if balance - Bet = 10 then cmdBetChange.enabled = True
+
+End Sub
+
+
+
+/* Slot Displays*/
+Private Sub CmdSpin_OnEvent()
+/*Start the spin timer*/ 
+  tmrSpin1.enabled = True
+  tmrSpin2.enabled = True
+  tmrSpin3.enabled = True
+  
+/*Generate the random numbers, from 1 to 10*/
+
+  Number1 = int(10 * Rnd) + 1
+  lblslot1.Caption = "Number = " && str(Number1)
+  
+  
+  Number2 = int(10 * Rnd) + 1
+  lblslot2.Caption = "Number = " && str(Number2)
+  
+ 
+  Number3 = int(10 * Rnd) + 1
+  lblslot3.Caption = "Number = " && str(Number3)
+
+  
+ /* deduct the cost for spinning from Balance */
+ Balance = Balance - Bet
+ lblbalance.caption = "Balance " & Balance & "Pts"
+ 
+ /* If spin gets 2 of a kind, then return the bet and winning which is double the bet.
+   if spin gets 3 of a kind, then return the bet and winning whih is ten times the bet*/
+   
+   
+  If Number1 <> Number2 <> Number3 then 
+      lblDisplay.caption = "Sorry you lost. Try Again!"
+      
+  end if      
+   
+   /*2 of a kind*/
+  If Number1 = Number2 then 
+    Balance = Balance + Bet*3
+    lblbalance.caption = "Balance " & Balance & "Pts"
+    lblDisplay.caption = " Congratulation! you won " & Bet*2 & " Pts!"
+  end if
+  If Number2 = Number3 then 
+      balance = Balance + Bet*3
+      lblbalance.caption = "Balance " & Balance & "Pts"
+      lblDisplay.caption = " Congratulation! you won " & Bet*2 & " Pts!"
+  end if
+  If Number1 = Number3 then 
+      balance = balance + Bet*3
+      lblbalance.caption = "Balance " & Balance & "Pts"
+      lblDisplay.caption = " Congratulation! you won " & Bet*2 & " Pts!"
+  end if
+   /*3 of a kind*/
+  If Number1 = Number2 = Number3 then 
+      Balance = Balance + Bet*11
+      lblbalance.caption = "Balance " & Balance & "Pts"
+      lblDisplay.caption = " Congratulation! you won " & Bet*10 & " Pts!"
+  end if 
+ 
+      
+/* If player doesn't have enough amount to spin, disable cmdSpin*/
+  if Balance - Bet < 0 then 
+  CmdSpin.enabled = False
+  lblDisplay.caption = "Insufficient fund. Please deposit money"
+  end if
+  
+/* Disable all the CmdBets that is not enough to add more cmdBet*/
+ if balance - Bet < 10 then cmdBet10.enabled = False
+ if balance - Bet > 10 then cmdBet10.enabled = True
+ if balance - Bet > 50 then cmdBet50.enabled = True
+ if balance - Bet < 50 then cmdBet50.enabled = False
+ if balance - Bet > 1000 then cmdBet1000.enabled = True
+ if balance - Bet < 1000 then cmdBet1000.enabled = False 
+
+End Sub
+
+
+
+
+/* Slot Face 1*/
+Private Sub tmrSpin1_OnEvent()
+/* timer */
+  timerCount1 = timerCount1 + 1
+/*convert each number into pictures to display on slot face*/
+ if timerCount1 < 25 then
+    imgSlot1.value="captainamerica.jpg"
+  end if
+ if timerCount1 > 25 and timerCount1 < 50 then
+     imgSlot1.value="blackwidow.jpg"
+  end if
+ if timerCount1 > 50 and timerCount1 < 75 then
+     imgSlot1.value="ironman.jpg"
+  end if
+ if timerCount1 > 75 and timerCount1 < 100 then
+     imgSlot1.value="Loki.jpg"
+  end if
+ if timerCount1 > 100 and timerCount1 < 125 then
+    imgSlot1.value="hulk.jpg"
+  end if
+ if timerCount1 > 125 and timerCount1 < 150 then
+     imgSlot1.value="Thor.jpg"
+  end if
+ if timerCount1 > 150 and timerCount1 < 175 then
+     imgSlot1.value="SHIELD.jpg"
+  end if
+ if timerCount1 > 175 and timerCount1 < 200 then
+     imgSlot1.value="Avengers.jpg"
+  end if
+ if timerCount1 > 200 and timerCount1 < 225 then
+     imgSlot1.value="HawkEye.jpg"
+  end if
+ if timerCount1 > 225 and timerCount1 < 250 then
+     imgSlot1.value="Tesseract.jpg"
+  end if
+ 
+/* Display final picture*/
+  if timerCount1 > 250 then
+  tmrSpin1.enabled=False
+    
+   if Number1=1 then
+      imgSlot1.value="Avengers.jpg"
+    elseif Number1=2 then
+       imgSlot1.value="Blackwidow.jpg"
+    elseif Number1=3 then
+       imgSlot1.value="CaptainAmerica.jpg"   
+    elseif Number1=4 then
+       imgSlot1.value="HawkEye.jpg"
+    elseif Number1=5 then
+       imgSlot1.value="Hulk.jpg"   
+    elseif Number1=6 then
+       imgSlot1.value="Ironman.jpg"   
+    elseif Number1=7 then
+       imgSlot1.value="Tesseract.jpg"   
+    elseif Number1=8 then
+       imgSlot1.value="Loki.jpg"   
+    elseif Number1=9 then
+       imgSlot1.value="SHIELD.jpg"   
+       else
+       imgSlot1.value="Thor.jpg"
+    end if
+    timerCount1=0
+  end if
+  
+End Sub
+
+
+
+/* Slot Face 2*/
+Private Sub TmrSpin2_OnEvent()
+  /* timer */
+    timerCount2 = timerCount2 + 1
+  /*convert each number into pictures to display on slot face*/
+ if timerCount2 < 25 then
+    imgSlot2.value="captainamerica.jpg"
+  end if
+ if timerCount2 > 25 and timerCount2 < 50 then
+     imgSlot2.value="blackwidow.jpg"
+  end if
+ if timerCount2 > 50 and timerCount2 < 75 then
+     imgSlot2.value="ironman.jpg"
+  end if
+ if timerCount2 > 75 and timerCount2 < 100 then
+     imgSlot2.value="Loki.jpg"
+  end if
+ if timerCount2 > 100 and timerCount2 < 125 then
+    imgSlot2.value="hulk.jpg"
+  end if
+ if timerCount2 > 125 and timerCount2 < 150 then
+     imgSlot2.value="Thor.jpg"
+  end if
+ if timerCount2 > 150 and timerCount2 < 175 then
+     imgSlot2.value="SHIELD.jpg"
+  end if
+ if timerCount2 > 175 and timerCount2 < 200 then
+     imgSlot2.value="Avengers.jpg"
+  end if
+ if timerCount2 > 200 and timerCount2 < 225 then
+     imgSlot2.value="HawkEye.jpg"
+  end if
+ if timerCount2 > 225 and timerCount2 < 250 then
+     imgSlot2.value="Tesseract.jpg"
+  end if
+  
+ /* Display final picture*/
+ if timerCount2 > 250 then
+  tmrSpin2.enabled=False 
+    
+   if Number2=1 then
+      imgSlot2.value="Avengers.jpg"
+    elseif Number2=2 then
+       imgSlot2.value="Blackwidow.jpg"
+    elseif Number2=3 then
+       imgSlot2.value="CaptainAmerica.jpg"   
+    elseif Number2=4 then
+       imgSlot2.value="HawkEye.jpg"
+    elseif Number2=5 then
+       imgSlot2.value="Hulk.jpg"   
+    elseif Number2=6 then
+       imgSlot2.value="Ironman.jpg"   
+    elseif Number2=7 then
+       imgSlot2.value="Tesseract.jpg"   
+    elseif Number2=8 then
+       imgSlot2.value="Loki.jpg"   
+    elseif Number2=9 then
+       imgSlot2.value="SHIELD.jpg"   
+       else
+       imgSlot2.value="Thor.jpg"
+    end if
+    timerCount2=0
+  end if
+  
+  
+End Sub
+
+  
+  
+/*Slot Face 3*/
+Private Sub TmrSpin3_OnEvent()
+/* timer */
+ timerCount3 = timerCount3 + 1
+/*convert each number into pictures to display on slot face*/
+ if timerCount3 < 25 then
+    imgSlot3.value="captainamerica.jpg"
+  end if
+ if timerCount3 > 25 and timerCount3 < 50 then
+     imgSlot3.value="blackwidow.jpg"
+  end if
+ if timerCount3 > 50 and timerCount3 < 75 then
+     imgSlot3.value="ironman.jpg"
+  end if
+ if timerCount3 > 75 and timerCount3 < 100 then
+     imgSlot3.value="Loki.jpg"
+  end if
+ if timerCount3 > 100 and timerCount3 < 125 then
+    imgSlot3.value="hulk.jpg"
+  end if
+ if timerCount3 > 125 and timerCount3 < 150 then
+     imgSlot3.value="Thor.jpg"
+  end if
+ if timerCount3 > 150 and timerCount3 < 175 then
+     imgSlot3.value="SHIELD.jpg"
+  end if
+ if timerCount3 > 175 and timerCount3 < 200 then
+     imgSlot3.value="Avengers.jpg"
+  end if
+ if timerCount3 > 200 and timerCount3 < 225 then
+     imgSlot3.value="HawkEye.jpg"
+  end if
+ if timerCount3 > 225 and timerCount3 < 250 then
+     imgSlot3.value="Tesseract.jpg"
+  end if
+ 
+ /* Display final picture*/
+  if timerCount3 > 250 then
+    tmrSpin3.enabled=False 
+    
+   if Number3=1 then
+      imgSlot3.value="Avengers.jpg"
+    elseif Number3=2 then
+       imgSlot3.value="Blackwidow.jpg"
+    elseif Number3=3 then
+       imgSlot3.value="CaptainAmerica.jpg"   
+    elseif Number3=4 then
+       imgSlot3.value="HawkEye.jpg"
+    elseif Number3=5 then
+       imgSlot3.value="Hulk.jpg"   
+    elseif Number3=6 then
+       imgSlot3.value="Ironman.jpg"   
+    elseif Number3=7 then
+       imgSlot3.value="Tesseract.jpg"   
+    elseif Number3=8 then
+       imgSlot3.value="Loki.jpg"   
+    elseif Number3=9 then
+       imgSlot3.value="SHIELD.jpg"   
+       else
+       imgSlot3.value="Thor.jpg"
+    end if
+    timerCount3=0
+  end if
+  
+
+End Sub
+
+
+
+  Private Sub CommandButton7_OnEvent()
+  
+  end 
+  
+End Sub
+
+
+/* Help instruction*/
+Private Sub CmdHelp_OnEvent()
+  msgbox "Deposit how mcuh ever you like, then click on bet bottons to decide how much you want to bet"
+  msgbox "If you want to change or made mistake and exceeded the price you want to bet, click on Change Bet, then bet will return to zero"
+  msgbox "Then you click spin to spin the slot machine. if you get any two same face, then you get double the bet, if you get all three the same then you get ten times your bet"
+  msgbox "If you don't get any match, you will lose the price of bet you had"
+  msgbox "If you run out of money, you could always add more money into the slot machine"
+  msgbox "Good luck!"
+End Sub
+
